@@ -1,7 +1,12 @@
 #include<stdio.h>
 
 /**
- * print hello
+ * main - Entry point of the program.
+ *
+ * Description: Prints a message indicating that programming is
+ * like building a multilingual puzzle.
+ *
+ * Return: Always returns 0 (Success).
  */
 int main(void)
 {

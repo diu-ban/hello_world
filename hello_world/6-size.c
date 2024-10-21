@@ -1,7 +1,13 @@
 #include <stdio.h>
 
 /**
- *print 
+ * main - Entry point of the program.
+ *
+ * Description: Prints the size of various data types in bytes.
+ * The sizes of char, int, long int, long long int, and float 
+ * are displayed to illustrate data type sizes in C.
+ *
+ * Return: Always returns 0 (Success).
  */
 int main(void)
 {

@@ -1,7 +1,11 @@
 #include<stdio.h>
 
 /**
- *print
+ * main - Entry point of the program.
+ *
+ * Description: Prints a message about proper grammar and art.
+ *
+ * Return: Always returns 0 (Success).
  */
 int main(void)
 {
