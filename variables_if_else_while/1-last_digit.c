@@ -16,7 +16,7 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	last_digit = n % 10;
+	int last_digit = n % 10;
 
 	pritnf("The last digit of %d is %d and is ", n, last_digit);
 
