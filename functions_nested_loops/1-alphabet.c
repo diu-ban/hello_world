@@ -16,6 +16,5 @@ void main(void)
 		ch++;
 	}
 
-	putchar('\n');
+	_putchar('\n');
 }
-  
