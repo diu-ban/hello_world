@@ -43,6 +43,8 @@ void times_table(void)
 			_putchar(numb % 10 + '0');
 			b++;
 		}
+		
 		_putchar('\n');
+		a++;
 	}
 }
