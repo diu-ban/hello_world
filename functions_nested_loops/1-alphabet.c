@@ -6,7 +6,7 @@
  * Description: Prints 'a' to 'z' followed by a new line
  *              using _putchar function twice.
  */
-void main(void)
+void print_alphabet(void)
 {
 	char ch = 'a';
 
