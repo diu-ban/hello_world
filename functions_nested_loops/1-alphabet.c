@@ -9,9 +9,12 @@
  *
  * Return: Always return 0.
  */
-int main(void)
+void print_alphabet(void)
 {
-	print_alphabet();
+	for (char ch = 'a'; ch <= 'z'; ch++)
+	{
+		_putchar(ch);
+	}
 
-	return (0);
+	_putchar('\n');
 }
