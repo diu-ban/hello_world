@@ -20,7 +20,7 @@ int main(void)
 		}
 		ptr++;
 	}
-	
+
 	printf("%d\n", sum);
 
 	return (0);
