@@ -30,8 +30,11 @@ void print_times_table(int n)
 
 				if (numb <= 9)
 				{
-					_putchar(' ');
-					_putchar(' ');
+					if (b != 0)
+					{
+						_putchar(' ');
+						_putchar(' ');
+					}
 					_putchar(numb + '0');
 				}
 				else if ((numb >= 10) && (numb <= 99))
