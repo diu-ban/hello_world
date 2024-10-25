@@ -1,0 +1,24 @@
+#include<stdio.h>
+
+int main(void)
+{
+	unsigned long int fst = 1;
+	unsigned long int snd = 2;
+	unsigned long int next;
+	int count = 0;
+
+	printf("%lu, %lu", fst, snd);
+
+	while (count <= 50)
+	{
+		next = fst + snd;
+		printf(", %lu", next);
+		fst = snd;
+		snd = next;
+		count++;
+	}
+
+	printf("\n");
+
+	return (0);
+}

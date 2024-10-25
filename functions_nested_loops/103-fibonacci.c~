@@ -1,0 +1,38 @@
+#include<stdio.h>
+
+unsigned long int fibo(int n);
+{
+	if (n == 1)
+	{
+		return (1);
+	}
+	if (n == 2)
+	{
+		return (2);
+	}
+
+	return fibo(n-2) + fibo(n-1);
+}
+
+int main(void)
+{
+	int count = 3;
+	unsigned long int sum = 2;
+	unsigned long int next = 2;
+
+	while (next <= 4000000)
+	{
+		next = fibo(count);
+
+		if (next % 2 == 0)
+		{
+			sum += next;
+		}
+
+		count++;
+	}
+
+	printf("%lu\n", sum);
+
+	return (0);
+}
