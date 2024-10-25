@@ -16,7 +16,7 @@ int main(void)
 
 	printf("%lu, %lu", fst, snd);
 
-	while (count <= 50)
+	while (count <= 48)
 	{
 		next = fst + snd;
 		printf(", %lu", next);
