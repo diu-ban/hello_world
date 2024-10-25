@@ -12,11 +12,11 @@ int main(void)
 	unsigned long int fst = 1;
 	unsigned long int snd = 2;
 	unsigned long int next;
-	int count = 0;
+	int count = 2;
 
 	printf("%lu, %lu", fst, snd);
 
-	while (count <= 48)
+	while (count <= 49)
 	{
 		next = fst + snd;
 		printf(", %lu", next);
