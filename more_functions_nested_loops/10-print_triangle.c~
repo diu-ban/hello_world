@@ -1,0 +1,28 @@
+#include "main.h"
+
+void print_triangle(int size)
+{
+	int row;
+	int col;
+	int spc;
+
+	if (size > 0)
+	{
+		for (row = 0; row < size; row++)
+		{
+			for (col = 0; col < (size - row - 1); col++)
+			{
+				_putchar(' ');
+			}
+			for (spc = 0; spc < (row + 1); spc++)
+			{
+				_putchar('#');
+			}
+			_putchar('\n');
+		}
+	}
+	else
+	{
+		_putchar('\n');
+	}
+}

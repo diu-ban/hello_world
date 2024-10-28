@@ -1,0 +1,22 @@
+#include "main.h"
+
+void more_numbers(void)
+{
+	int i = 0;
+	int numb = 0;
+
+	while (i < 10)
+	{
+		while (numb < 14)
+		{
+			if (numb > 9)
+			{
+				_putchar('1');
+			}
+			_putchar(numb % 10 + '0');
+			numb++;
+		}
+		i++;
+	}
+	_putchar('\n');
+}

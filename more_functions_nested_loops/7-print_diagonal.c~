@@ -1,0 +1,24 @@
+#include "main.h"
+
+void print_diagonal(int n)
+{
+	int reps = 0;
+	int spaces = 0;
+
+	if (n > 0)
+	{
+		for (reps < n; reps++)
+		{
+			for (spaces < (n - 2); spaces++)
+			{
+				_putchar(' ');
+			}
+			_putchar('\\');
+			_putchar('\n');
+		}
+	}
+	else
+	{
+		_putchar('\n');
+	}
+}
