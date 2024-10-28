@@ -28,7 +28,7 @@ int main(void)
 
 	if (number > 2)
 	{
-		lagest_prime = number;
+		largest_prime = number;
 	}
 
 	printf("%ld\n", largest_prime);
