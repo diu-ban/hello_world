@@ -17,7 +17,7 @@ int main(void)
 		number /= 2;
 	}
 
-	for (factor = 3; (factor * factor) <= number; factor + 2)
+	for (factor = 3; (factor * factor) <= number; factor += 2)
 	{
 		while (number % factor == 0)
 		{
