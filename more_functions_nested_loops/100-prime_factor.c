@@ -21,7 +21,7 @@ int main(void)
 	{
 		while (number % factor == 0)
 		{
-			largest_prime == factor;
+			largest_prime = factor;
 			number /= factor;
 		}
 	}
