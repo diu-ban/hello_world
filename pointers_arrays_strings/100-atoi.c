@@ -34,6 +34,16 @@ int _atoi(char *s)
 		if ((*s >= '0') && (*s <= '9'))
 		{
 			started = 1;
+
+			if ((sign == 1) && (result > (2147483647 - (*s - '0')) / 10)
+			{
+				return (2147483647);
+			}
+			else if ((sign == -1) && (result < (-2147483648 + (*s - '0')) / 10)
+			{
+				return (-2147483648);
+			}
+
 			result = result * 10 + (*s - '0');
 		}
 		else if (started)
@@ -42,11 +52,6 @@ int _atoi(char *s)
 		}
 
 		s++;
-	}
-
-	if ((sign == -1) && (result > 2147483647))
-	{
-		return (-2147483648);
 	}
 
 	return (sign * result);
