@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * puts2 - Prints every second character of a string if its ASCII value is even.
+ * puts2 - Prints every second character of a string if its ind value is even.
  * @str: Pointer to the string to be processed.
  *
  * Description: This function iterates through the given string and
