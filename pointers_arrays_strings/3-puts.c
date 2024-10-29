@@ -8,7 +8,7 @@
  *              each character to the standard output using _putchar,
  *              followed by a newline.
  */
-int void _puts(char *str)
+void _puts(char *str)
 {
 	int i = 0;
 
