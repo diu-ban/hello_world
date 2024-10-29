@@ -43,8 +43,10 @@ int _atoi(char *s)
 			{
 				return (-2147483648);
 			}
-
-			result = result * 10 + (*s - '0');
+			else 
+			{
+				result = result * 10 + (*s - '0');
+			}
 		}
 		else if (started)
 		{
