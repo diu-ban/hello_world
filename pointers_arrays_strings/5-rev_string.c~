@@ -1,0 +1,20 @@
+#include "main.h"
+
+void rev_string(char *s)
+{
+	int len = 0;
+	int count = 0;
+	char *cp_str;
+
+	while (s[len] != '\0')
+	{
+		cp_str[len] = s[len];
+		len++;
+	}
+
+	while (count < len)
+	{
+		s[count] = cp_str[len - count]; 
+	}
+
+}
