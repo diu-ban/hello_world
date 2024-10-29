@@ -22,16 +22,16 @@ int _atoi(char *s)
 
 	while (*s != '\0')
 	{
-		if (*s == '-' && (!started))
+		if ((*s == '-') && (!started))
 		{
 			sign *= -1;
 		}
-		else if (*s == '+' && (!started))
+		else if ((*s == '+') && (!started))
 		{
 			sign *= 1;
 		}
 
-		if (*s >= '0' && *s <= '9')
+		if ((*s >= '0') && (*s <= '9'))
 		{
 			started = 1;
 			result = result * 10 + (*s - '0');
@@ -42,6 +42,11 @@ int _atoi(char *s)
 		}
 
 		s++;
+	}
+
+	if ((sign == -1) && (result > 2147483647))
+	{
+		return (-2147483648);
 	}
 
 	return (sign * result);
