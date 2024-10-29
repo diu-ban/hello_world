@@ -11,7 +11,7 @@ void rev_string(char *s)
 {
 	int len = 0;
 	int count = 0;
-	char *cp_str;
+	char *cp_str[500];
 
 	while (s[len] != '\0')
 	{
