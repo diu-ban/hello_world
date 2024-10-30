@@ -2,7 +2,7 @@
 #include <time.h>
 #include <stdlib.h>
 
-#define CHAR_SET " 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!\"#$%&'()*+,-./:;<=>? @[\]^_`{|}~"
+#define CHAR_SET " 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!#$%&()*+,-./:;<=>?@"
 
 int main(void)
 {
