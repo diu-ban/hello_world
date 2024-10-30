@@ -66,5 +66,12 @@ int _atoi(char *s)
 		s++;
 	}
 
-	return (sign * result);
+	if (result == -2147483648)
+	{
+		return (result);
+	}
+	else
+	{  
+		return (sign * result);
+	}
 }
