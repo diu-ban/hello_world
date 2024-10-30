@@ -5,17 +5,18 @@
 int main(void)
 {
 	int arr[14];
+	int y, i;
 
 	srand(time(NULL));
 
-	for (int i = 0; i < 15; i++)
+	for (i = 0; i < 15; i++)
 	{
-		a[i] = rand() % 128;
+		arr[i] = rand() % 128;
 	}
 
-	for (int y = 0; y < 15; y++)
+	for (y = 0; y < 15; y++)
 	{
-		printf("%c", a[i]);
+		printf("%c", arr[i]);
 	}
 
 	return (0);
