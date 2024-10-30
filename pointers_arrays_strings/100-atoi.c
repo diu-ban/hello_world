@@ -14,7 +14,7 @@
  * Return: The integer value of the first number sequence in the string.
  * Returns 0 if no numbers are found.
  */
-int atoi(char *s)
+int _atoi(char *s)
 {
 	int sign = 1;
 	int result = 0;
