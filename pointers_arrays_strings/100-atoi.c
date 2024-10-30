@@ -47,7 +47,7 @@ int _atoi(char *s)
 				if (result > 2147483648 / 10 ||
 				(result == 2147483648 / 10 && (*s - '0') > 8))
 				{
-					sign = -1;
+					sign = 1;
 					return -2147483648;
 				}
 				result = result * 10 + (*s - '0');
