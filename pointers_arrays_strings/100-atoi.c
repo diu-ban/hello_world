@@ -37,11 +37,11 @@ int _atoi(char *s)
 
 			if ((sign == 1) && (result > (2147483647 - (*s - '0')) / 10))
 			{
-				result = 2147483647;
+				return (2147483647);
 			}
 			else if ((sign == -1) && (-result < (-2147483648 + (*s - '0')) / 10))
 			{
-				result = -2147483648;
+				return (-2147483648);
 			}
 			else
 			{
@@ -56,9 +56,5 @@ int _atoi(char *s)
 		s++;
 	}
 
-	if ((result == 2147483647) || (result == -2147483648))
-	{
-		return (result);
-	}
 	return (sign * result);
 }
