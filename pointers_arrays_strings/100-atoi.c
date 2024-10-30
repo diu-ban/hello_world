@@ -43,6 +43,7 @@ int _atoi(char *s)
 			{
 				result = result * 10 + (*s - '0');
 				result *= -1;
+				mul += 1;
 			}
 			else
 			{
