@@ -4,7 +4,7 @@
 
 int main(void)
 {
-	int arr[15];
+	int arr[14];
 
 	srand(time(NULL));
 
