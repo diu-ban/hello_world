@@ -33,7 +33,7 @@ int _atoi(char *s)
 
 			if (sign == 1 && (result > (2147483647 - (*s - '0')) / 10))
 				result =  2147483647;
-			else if (sign == -1 && (-result < (-2147483648 + (*s - '0')) / 10))
+			else if (sign == -1 && (result > (2147483647 - (*s - '0') + 1) / 10))
 				result = -2147483648;
 			else
 				result = result * 10 + (*s - '0');
