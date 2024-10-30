@@ -40,7 +40,10 @@ int _atoi(char *s)
 				{
 					return 2147483647;
 				}
-				result = result * 10 + (*s - '0');
+				else
+				{
+					result = result * 10 + (*s - '0');
+				}
 			}
 			else
 			{
@@ -50,7 +53,10 @@ int _atoi(char *s)
 					sign = 1;
 					return -2147483648;
 				}
-				result = result * 10 + (*s - '0');
+				else
+				{
+					result = result * 10 + (*s - '0');
+				}
 			}
 		}
 		else if (started)
