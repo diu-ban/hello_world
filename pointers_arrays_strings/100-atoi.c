@@ -23,9 +23,9 @@ int _atoi(char *s)
 	while (*s != '\0')
 	{
 		if (*s == '-' && !started)
-        	sign *= -1;
+        		sign *= -1;
 		else if (*s == '+' && !started)
-		sign *= 1;
+			sign *= 1;
 
 		if (*s >= '0' && *s <= '9')
 		{
@@ -33,8 +33,10 @@ int _atoi(char *s)
 
 			if (sign == 1 && (result > (2147483647 - (*s - '0')) / 10))
 				result =  2147483647;
-			else if (sign == -1 && (result > (2147483647 - (*s - '0') + 1) / 10))
+				break;
+			else if (sign == -1 && (-result < (-2147483648 + (*s - '0')) / 10))
 				result = -2147483648;
+				break;
 			else
 				result = result * 10 + (*s - '0');
 		}
