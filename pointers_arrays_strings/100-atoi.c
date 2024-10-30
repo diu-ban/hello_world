@@ -22,31 +22,21 @@ int _atoi(char *s)
 
 	while (*s != '\0')
 	{
-		if ((*s == '-') && (!started))
-		{
-			sign *= -1;
-		}
-		else if ((*s == '+') && (!started))
-		{
-			sign *= 1;
-		}
+		if (*s == '-' && !started)
+        	sign *= -1;
+		else if (*s == '+' && !started)
+		sign *= 1;
 
-		if ((*s >= '0') && (*s <= '9'))
+		if (*s >= '0' && *s <= '9')
 		{
 			started = 1;
 
-			if ((sign == 1) && (result > (2147483647 - (*s - '0')) / 10))
-			{
-				return (2147483647);
-			}
-			else if ((sign == -1) && (result < (-2147483648 + (*s - '0')) / 10))
-			{
-				return (-2147483648);
-			}
-			else 
-			{
-				result = result * 10 + (*s - '0');
-			}
+			if (sign == 1 && (result > (2147483647 - (*s - '0')) / 10))
+				return 2147483647;
+			else if (sign == -1 && (-result < (-2147483648 + (*s - '0')) / 10))
+				return -2147483648;
+
+			result = result * 10 + (*s - '0');
 		}
 		else if (started)
 		{
