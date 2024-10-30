@@ -23,9 +23,13 @@ int _atoi(char *s)
 	while (*s != '\0')
 	{
 		if (*s == '-' && !started)
+		{
         		sign *= -1;
+		}
 		else if (*s == '+' && !started)
+		{
 			sign *= 1;
+		}
 
 		if (*s >= '0' && *s <= '9')
 		{
