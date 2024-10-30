@@ -34,7 +34,6 @@ int _atoi(char *s)
 		if ((*s >= '0') && (*s <= '9'))
 		{
 			started = 1;
-
 			if (sign == 1)
 			{
 				result = result * 10 + (*s - '0');
@@ -56,6 +55,5 @@ int _atoi(char *s)
 		}
 		s++;
 	}
-
-	return result;
+	return (result);
 }
