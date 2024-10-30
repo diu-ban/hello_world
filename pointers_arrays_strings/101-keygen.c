@@ -2,22 +2,22 @@
 #include <time.h>
 #include <stdlib.h>
 
+#define CHAR_SET " 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!\"#$%&'()*+,-./:;<=>? @[\]^_`{|}~"
+
 int main(void)
 {
-	int arr[14];
-	int y, i;
+	char pass[15];
+	int i;
 
 	srand(time(NULL));
 
 	for (i = 0; i < 15; i++)
 	{
-		arr[i] = rand() % 128;
+		pass[i] = CHAR_SET[rand() % (sizeof(CHAR_SET) - 1)];
 	}
+	pass[15] = '\0';
 
-	for (y = 0; y < 15; y++)
-	{
-		printf("%c", arr[i]);
-	}
+	printf("%s\n", pass);
 
 	return (0);
 }
