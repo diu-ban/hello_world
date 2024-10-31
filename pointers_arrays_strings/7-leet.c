@@ -15,16 +15,16 @@
  */
 char *leet(char *s)
 {
-	char key[] = "AaEeOoTtLl";
-	char val[] = "4433007711";
 	int i;
 	int j;
+	char key[] = "AaEeOoTtLl";
+	char val[] = "4433007711";
 
-	for (i = 0; i != '\0'; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
 		for (j = 0; key[j] != '\0'; j += 2)
 		{
-			if (s[i] == key[j] || s[i] == key[j+1])
+			if ((s[i] == key[j]) || (s[i] == key[j+1]))
 			{
 				s[i] = val[j];
 				break;
