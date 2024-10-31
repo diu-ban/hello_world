@@ -16,13 +16,13 @@ char *_strncat(char *dest, char *src, int n)
 {
 	int len = 0;
 	int i = 0;
-	int size = sizeof(dest);
+	int size = sizeof(char);
 
 	while (dest[len] != '\0')
 	{
 		len++;
 	}
-	if (len + n > size)
+	if (len + n > size * len)
 	{
 		return (dest);
 	}
