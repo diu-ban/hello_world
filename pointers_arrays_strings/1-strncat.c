@@ -24,7 +24,7 @@ char *_strncat(char *dest, char *src, int n)
 	}
 	if (len + n > size)
 	{
-		return NULL;
+		return (dest);
 	}
 	while (i < n && src[i] != '\0')
 	{
