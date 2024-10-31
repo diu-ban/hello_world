@@ -15,7 +15,7 @@
 char *cap_string(char *s)
 {
 	int i = 0;
-	char seperator[] = "\t\n,;.!?\"(){}";
+	char seperator[] = " \t\n,;.!?\"(){}";
 
 	if ((s[i] >= 'a') && (s[i] <= 'z'))
 	{
