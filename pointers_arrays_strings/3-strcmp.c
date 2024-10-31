@@ -10,7 +10,7 @@
  *              If both strings are equal, it returns 0, otherwise, it returns
  *              non zero value.
  *
- * Return: 0 if the strings are equal, a positive or negative integer based on the
+ * Return: 0 if the strings are equal, a positive or negative integer based on
  *         lexicographical order if they are different.
  */
 int _strcmp(char *s1, char *s2)
