@@ -22,9 +22,9 @@ char *leet(char *s)
 
 	for (i = 0; i != '\0'; i++)
 	{
-		for (j = 0; j!= '\0'; j++)
+		for (j = 0; key[j] != '\0'; j += 2)
 		{
-			if (s[i] == key[j])
+			if (s[i] == key[j] || s[i] == key[j+1])
 			{
 				s[i] = val[j];
 				break;
