@@ -9,7 +9,7 @@
  *              its elements in place. It swaps elements from both ends
  *              moving towards the center until the array is reversed.
  */
-void reverse_array(int *a , int n)
+void reverse_array(int *a, int n)
 {
 	if (n > 1)
 	{
