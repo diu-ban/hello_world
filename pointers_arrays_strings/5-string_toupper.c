@@ -14,6 +14,8 @@
  */
 char *string_toupper(char *s)
 {
+	char *ori = s;
+
 	while (*s != '\0')
 	{
 		if ((*s >= 'a') && (*s <= 'z'))
@@ -23,5 +25,5 @@ char *string_toupper(char *s)
 		s++;
 	}
 
-	return (s);
+	return (ori);
 }

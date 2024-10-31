@@ -6,9 +6,9 @@
  * @s2: Second string to compare.
  *
  * Description: This function compares two strings character by character
- *              until a difference is found or the end of either string is reached.
- *              If both strings are equal, it returns 0. If they differ, it returns
- *              the difference between the ASCII values of the first non-matching characters.
+ *              until a difference is found or the end of either string.
+ *              If both strings are equal, it returns 0, otherwise, it returns
+ *              non zero value.
  *
  * Return: 0 if the strings are equal, a positive or negative integer based on the
  *         lexicographical order if they are different.
