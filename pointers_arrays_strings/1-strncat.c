@@ -6,9 +6,7 @@
  * @src: The source string to append to dest.
  * @n: The maximum number of bytes to use from src.
  *
- * Description: This function appends src to dest, using at most n bytes from src.
- * If src contains n or more bytes, it does not need to be null-terminated.
- * The destination string must have enough space to hold the result.
+ * Description: This function appends src to dest.
  *
  * Return: A pointer to the resulting string dest.
  */
@@ -21,10 +19,6 @@ char *_strncat(char *dest, char *src, int n)
 	while (dest[len] != '\0')
 	{
 		len++;
-	}
-	if (len + n > size * len)
-	{
-		return (dest);
 	}
 	while (i < n && src[i] != '\0')
 	{
