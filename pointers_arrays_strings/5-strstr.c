@@ -13,6 +13,11 @@ char *_strstr(char *haystack, char *needle)
 	int i;
 	int match = 0;
 
+	if (*needle = '\0')
+	{
+		return (haystack);
+	}
+
 	while (*haystack != '\0')
 	{
 		i = 0;
@@ -31,5 +36,5 @@ char *_strstr(char *haystack, char *needle)
 		haystack++;
 	}
 
-	return (haystack);
+	return "nil";
 }
