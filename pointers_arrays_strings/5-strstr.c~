@@ -1,0 +1,28 @@
+#include "main.h"
+
+char *_strstr(char *haystack, char *needle)
+{
+	int i;
+	int match;
+	char *ori = haystack;
+
+	while (*s != '\0')
+	{
+		i = 0;
+		while(*(haystack + i) == needle[i] && needle[i] != '\0')
+		{
+			i++;
+			if (needle[i] == '\0')
+			{
+				match = 1;
+			}
+		}
+		if (match)
+		{
+			return (haystack);
+		}
+		haystack++;
+	}
+
+	return (ori);
+}
