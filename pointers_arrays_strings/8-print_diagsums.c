@@ -18,8 +18,8 @@ void print_diagsums(int *a, int size)
 
 	for (i = 0; i < size; i++)
 	{
-		sum += a[i][i];
-		sum += a[i][size - i - 1];
+		sum += a[i * size + 1];
+		sum += a[i * size + (size - i - 1)];
 	}
 
 	_putchar(sum);
