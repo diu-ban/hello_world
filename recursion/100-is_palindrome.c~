@@ -1,0 +1,30 @@
+#include "main.h"
+
+int palin_len(char *s)
+{
+	int len = 0;
+	while (s[len] != '\0')
+	{
+		len++;
+	}
+	return (len);
+}
+
+int palin_check(char *s, int len)
+{
+	if(len <= 1)
+	{
+		return (1);
+	}
+	if (*s != s[len - 1])
+	{
+		return (0);
+	}
+	return (palin_check(s + 1, len - 2);
+}
+
+int is_palindrome(char *s)
+{
+	int len = palin_len(s);
+	return palin_check(s, len);
+}
