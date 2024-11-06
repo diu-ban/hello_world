@@ -25,10 +25,10 @@ char *_strpbrk(char *s, char *accept)
 		}
 		if (match)
 		{
-			break;
+			return (s);
 		}
 		s++;
 	}
 
-	return (s);
+	return ("nil");
 }
