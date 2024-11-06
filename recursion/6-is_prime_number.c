@@ -17,11 +17,7 @@ int prime_check(int n, int i);
  */
 int is_prime_number(int n)
 {
-	if (n < 1)
-	{
-		return (-1);
-	}
-	if (n == 1)
+	if (n <= 1)
 	{
 		return (0);
 	}
