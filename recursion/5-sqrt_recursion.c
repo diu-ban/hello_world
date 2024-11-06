@@ -26,12 +26,12 @@ int _sqrt_recursion(int n)
 }
 
 /**
- 4 * sqrt_subtract - function to find square root by subtracting odd numbers.
- 5 * @n: the number from which odd numbers are being subtracted.
- 6 * @odd: the current odd number to subtract.
- 7 *
- 8 * Return: the number of the square root or -1 if n goes negative.
- 9 */
+ * sqrt_subtract - function to find square root by subtracting odd numbers.
+ * @n: the number from which odd numbers are being subtracted.
+ * @odd: the current odd number to subtract.
+ *
+ * Return: the number of the square root or -1 if n goes negative.
+ */
 int sqrt_subtract(int n, int odd)
 {
 	if (n < 0)
