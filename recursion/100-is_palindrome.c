@@ -10,7 +10,7 @@ int palin_len(char *s)
 {
 	if (*s == '\0')
 	{
-		return (1);
+		return (0);
 	}
 	return (1 + palin_len(s + 1));
 }
