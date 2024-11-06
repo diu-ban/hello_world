@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * check_prime - function that checks divisibility recursively.
+ * prime_check - function that checks divisibility recursively.
  * @n: the number to check.
  * @i: the current divisor.
  *
@@ -25,7 +25,7 @@ int is_prime_number(int n)
 }
 
 /**
- * check_prime - function that checks divisibility recursively.
+ * prime_check - function that checks divisibility recursively.
  * @n: the number to check.
  * @i: the current divisor.
  *
