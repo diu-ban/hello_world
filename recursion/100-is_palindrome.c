@@ -24,7 +24,7 @@ int palin_len(char *s)
  */
 int palin_check(char *s, int len)
 {
-	if(len <= 1)
+	if (len <= 1)
 	{
 		return (1);
 	}
@@ -44,5 +44,6 @@ int palin_check(char *s, int len)
 int is_palindrome(char *s)
 {
 	int len = palin_len(s);
+
 	return (palin_check(s, len));
 }
