@@ -13,7 +13,7 @@
 int main(int argc, char *argv[])
 {
 	int change;
-	int coins;
+	int coins = 0;
 	int cent[5] = {25, 10, 5, 2, 1};
 	int i = 0;
 
