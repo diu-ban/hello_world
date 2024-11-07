@@ -7,7 +7,7 @@
  * @argc: The number of arguments passed to the program.
  * @argv: An array of strings representing the arguments passed.
  *
- * Return: 0 if the program runs successfully, 1 if there is an error (wrong 
+ * Return: 0 if the program runs successfully, 1 if there is an error (wrong
  *         number of arguments). 0 if the amount is negative.
  */
 int main(int argc, char *argv[])
