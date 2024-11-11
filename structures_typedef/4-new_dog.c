@@ -20,14 +20,14 @@ dog_t *new_dog(char *name, float age, char *owner)
 	{
 		return (NULL);
 	}
-	if (name == NULL || name == "")
+	if (name == NULL)
 	{
 		ptr->name = "(nil)";
 	}
 	else
 		ptr->name = name;
 	ptr->age = age;
-	if (owner == NULL || owner == "")
+	if (owner == NULL)
 	{
 		ptr->owner = "(nil)";
 	}
