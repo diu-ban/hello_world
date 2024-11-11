@@ -3,14 +3,15 @@
 #include <stdlib.h>
 
 /**
- * _str_len - calculates the length of a string manually
- * @str: the string whose length is to be calculated
+ * _str_len - calculates the length of a string manually.
+ * @str: the string whose length is to be calculated.
  *
  * Return: the length of the string
  */
 int _strlen(char *str)
 {
 	int len = 0;
+
 	while (str[len] != '\0')
 	{
 		len++;
@@ -36,17 +37,14 @@ dog_t *new_dog(char *name, float age, char *owner)
 	{
 		return (NULL);
 	}
-
 	len1 = _strlen(name);
 	len2 = _strlen(owner);
-
 	ptr->name = malloc(len1 + 1);
 	if (ptr->name == NULL)
 	{
 		free(ptr);
 		return (NULL);
 	}
-
 	ptr->owner = malloc(len2 + 1);
 	if (ptr->owner == NULL)
 	{
