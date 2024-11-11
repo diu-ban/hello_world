@@ -1,0 +1,29 @@
+#include "main.h"
+#include <stdlib.h>
+
+char *_strdup(char *str)
+{
+	int size = 0;
+	int i;
+	char *dupstr;
+
+	if (str == NULL)
+	{
+		return (NULL);
+	}
+
+	while (*str != '\0')
+	{
+		size++;
+		str++;
+	}
+
+	dupstr = malloc(sizeof(char) * size);
+
+	for (i = 0; i <= size; i++)
+	{
+		dupstr[i] = str[i];
+	}
+
+	return (dupstr);
+}
