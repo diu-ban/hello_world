@@ -8,7 +8,7 @@
  * @n: The number of bytes of s2 to include
  *
  * Return: Pointer to the newly allocated space in memory containing s1
- *         followed by the first n bytes of s2, null-terminated. 
+ *         followed by the first n bytes of s2, null-terminated.
  *         If malloc fails, returns NULL.
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
