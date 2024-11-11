@@ -5,7 +5,7 @@
  * malloc_checked - Allocates memory using malloc and checks for failure
  * @b: The number of bytes to allocate
  *
- * Return: A pointer to the allocated memory, or terminates the program 
+ * Return: A pointer to the allocated memory, or terminates the program
  *         with status 98 if malloc fails.
  */
 void *malloc_checked(unsigned int b)
