@@ -3,36 +3,70 @@
 #include <stdlib.h>
 
 /**
- * new_dog - Creates a new dog with the given name, age, and owner
- * @name: Name of the dog (string)
- * @age: Age of the dog (float)
- * @owner: Owner of the dog (string)
+ * _str_len - calculates the length of a string manually
+ * @str: the string whose length is to be calculated
  *
- * Return: A pointer to the newly created dog_t structure, or NULL
- *         if memory allocation fails.
+ * Return: the length of the string
+ */
+int _strlen(char *str)
+{
+	int len = 0;
+	while (str[len] != '\0')
+	{
+		len++;
+	}
+	return (len);
+}
+
+/**
+ * new_dog - creates a new dog.
+ * @name: name of the dog.
+ * @age: age of the dog.
+ * @owner: owner of the dog.
+ *
+ * Return: pointer to the new dog struct or NULL if it fails.
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *ptr;
+	int len1, len2, i;
 
 	ptr = malloc(sizeof(dog_t));
 	if (ptr == NULL)
 	{
 		return (NULL);
 	}
-	if (name == NULL)
-	{
-		ptr->name = "(nil)";
-	}
-	else
-		ptr->name = name;
-	ptr->age = age;
-	if (owner == NULL)
-	{
-		ptr->owner = "(nil)";
-	}
-	else
-		ptr->owner = owner;
 
+	len1 = _strlen(name);
+	len2 = _strlen(owner);
+
+	ptr->name = malloc(len1 + 1);
+	if (ptr->name == NULL)
+	{
+		free(ptr);
+		return (NULL);
+	}
+
+	ptr->owner = malloc(len2 + 1);
+	if (ptr->owner == NULL)
+	{
+		free(ptr->name);
+		free(ptr);
+		return (NULL);
+	}
+
+	for (i = 0; i < len1; i++)
+	{
+		ptr->name[i] = name[i];
+	}
+	ptr->name[i] = '\0';
+
+	for (i = 0; i < len2; i++)
+	{
+		ptr->owner[i] = owner[i];
+	}
+	ptr->owner[i] = '\0';
+
+	ptr->age = age;
 	return (ptr);
 }
