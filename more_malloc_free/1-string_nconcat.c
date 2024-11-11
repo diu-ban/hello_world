@@ -25,13 +25,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s2 = "";
 	}
 	while (s1[i] != '\0')
-	{
 		i++;
-	}
 	while (s2[y] != '\0')
-	{
 		y++;
-	}
 	if (n >= y)
 	{
 		size = 1 + i + y;
