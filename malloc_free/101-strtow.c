@@ -32,9 +32,9 @@ char **strtow(char *str)
 {
 	char **words;
 	int i = 0;
-	int j, k, wcount;
+	int j, k, wcount, len;
 
-	if (str == NULL || str[0] = '\0')
+	if (str == NULL || str[0] == '\0')
 	{
 		return (NULL);
 	}
