@@ -34,5 +34,5 @@ char *_strdup(char *str)
 		dupstr[i] = str[i];
 	}
 
-        return (dupstr);
+	return (dupstr);
 }
