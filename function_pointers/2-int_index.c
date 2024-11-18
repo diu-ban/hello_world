@@ -2,16 +2,22 @@
 #include <stdlib.h>
 
 /**
- * int_index - Searches for the first element in an array that satisfies a condition
- * @array: The array to be searched
- * @size: The size of the array
- * @cmp: A pointer to the function used to compare elements of the array
+ * int_index - Searches for the first element in an array that satisfies 
+ *             a condition.
+ * @array: The array to be searched.
+ * @size: The size of the array.
+ * @cmp: A pointer to the function used to compare elements of the array.
  *
- * Description: This function searches through the array `array` of size `size`
- *              and uses the function pointed to by `cmp` to compare each element.
- *              If a match is found (i.e., `cmp` returns a non-zero value),
- *              the index of the first match element is returned. If no match
- *              is found or the size is less than or equal to zero, return -1.
+ * Description: This function iterates through the array `array` of size 
+ *              `size` and uses the function pointed to by `cmp` to compare 
+ *              each element. If a match is found (i.e., `cmp` returns a 
+ *              non-zero value), the index of the first matching element 
+ *              is returned. If no match is found, or if the size is less 
+ *              than or equal to zero, -1 is returned.
+ *
+ * Return: Index of the first element for which `cmp` returns true, or 
+ *         -1 if no element satisfies the condition or if the input is 
+ *         invalid.
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
