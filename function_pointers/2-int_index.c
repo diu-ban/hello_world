@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * int_index - Searches for the first element in an array that satisfies 
+ * int_index - Searches for the first element in an array that satisfies
  *             a condition.
  * @array: The array to be searched.
  * @size: The size of the array.
@@ -15,8 +15,8 @@
  *              is returned. If no match is found, or if the size is less
  *              than or equal to zero, -1 is returned.
  *
- * Return: Index of the first element for which `cmp` returns true, or 
- *         -1 if no element satisfies the condition or if the input is 
+ * Return: Index of the first element for which `cmp` returns true, or
+ *         -1 if no element satisfies the condition or if the input is
  *         invalid.
  */
 int int_index(int *array, int size, int (*cmp)(int))
