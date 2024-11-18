@@ -1,0 +1,21 @@
+#include "3-calc.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+/**
+ * main - performs simple operations based on user input
+ * @argc: number of arguments
+ * @argv: array of arguments
+ * Return: 0 if successful, or exits with an error code
+ */
+int main(int argc, char *argv[])
+{
+	int num1, num2;
+	int (*operation)(int, int);
+
+	if (argc != 4)
+	{
+		printf("Error\n");
+		exit(98);
+	}
+}
