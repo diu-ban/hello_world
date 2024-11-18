@@ -9,9 +9,9 @@
  *
  * Description: This function searches through the array `array` of size `size`
  *              and uses the function pointed to by `cmp` to compare each element.
- *              If a match is found (i.e., `cmp` returns a non-zero value), 
- *              the index of the first matching element is returned. If no match
- *              is found or if the size is less than or equal to zero, -1 is returned.
+ *              If a match is found (i.e., `cmp` returns a non-zero value),
+ *              the index of the first match element is returned. If no match
+ *              is found or the size is less than or equal to zero, return -1.
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
