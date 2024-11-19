@@ -1,0 +1,7 @@
+#ifndef vaf_h
+#define vaf_h
+
+int _putchar(char c);
+int sum_them_all(const unsigned int n, ...);
+
+#endif
