@@ -2,15 +2,15 @@
 #include <stdlib.h>
 
 /**
- * delete_dnodeint_at_index - Deletes the node at a given index in a doubly 
+ * delete_dnodeint_at_index - Deletes the node at a given index in a doubly
  * linked list.
  * @head: A pointer to the head of the doubly linked list.
  * @index: The index of the node to be deleted, starting from 0.
  *
- * Return: 1 if the deletion was successful, -1 if it failed (e.g., invalid 
+ * Return: 1 if the deletion was successful, -1 if it failed (e.g., invalid
  * index or an empty list).
  *
- * Description: This function deletes a node at a given index in a doubly 
+ * Description: This function deletes a node at a given index in a doubly
  * linked list. It handles cases such as:
  *   - Deleting the head node
  *   - Deleting a node in the middle or at the end of the list
