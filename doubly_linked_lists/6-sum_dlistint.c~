@@ -1,0 +1,10 @@
+#include "lists.h"
+
+int sum_dlistint(dlistint_t *head)
+{
+	dlistint_t tmp = head;
+
+	if (tmp == NULL)
+	  return (0);
+	return (tmp->n + sum_dlistint(tmp->next));
+}
