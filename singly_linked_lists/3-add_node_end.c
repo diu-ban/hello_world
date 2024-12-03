@@ -11,9 +11,10 @@
 unsigned int _strlen(const char *str)
 {
 	unsigned int len = 0;
+
 	if (str == NULL)
 		return (len);
-	while(str[len])
+	while (str[len])
 		len++;
 	return (len);
 }
