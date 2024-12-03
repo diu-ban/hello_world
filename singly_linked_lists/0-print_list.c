@@ -12,7 +12,7 @@ void print_node(const list_t *node)
 	if (node->str == NULL)
 		printf("[0] (nil)\n");
 	else
-		printf("[%d] (%s)\n", node->len, node->str);
+		printf("[%d] %s\n", node->len, node->str);
 }
 
 /**
