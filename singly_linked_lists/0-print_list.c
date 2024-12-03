@@ -23,7 +23,7 @@ void print_node(list_t *node)
  */
 size_t print_list(const list_t *h)
 {
-	list_t *ptr = h;
+	const list_t *ptr = h;
 	size_t nodes = 0;
 
 	while (ptr != NULL)
