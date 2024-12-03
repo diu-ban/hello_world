@@ -9,9 +9,8 @@
  */
 void print_node(list_t *node)
 {
-        
-	if (node->str == NULL || node->str == "")
-		printf("[0] (nil)");
+	if (node->str == NULL)
+		printf("[0] (nil)\n");
 	else
 		printf("[%d] (%s)\n", node->len, node->str);
 }
