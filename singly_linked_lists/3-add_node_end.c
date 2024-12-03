@@ -8,11 +8,11 @@
  *
  * Return: The length of the string.
  */
-unsigned int _strlen(char *str)
+unsigned int _strlen(const char *str)
 {
 	unsigned int len = 0;
 	if (str == NULL)
-		return (NULL);
+		return (len);
 	while(str[len])
 		len++;
 	return (len);
@@ -54,7 +54,7 @@ list_t *add_node_end(list_t **head, const char *str)
 		{
 			tmp = tmp->next;
 		}
-		tmp.next = new;
+		tmp->next = new;
 	}
 	return (new);
 }
