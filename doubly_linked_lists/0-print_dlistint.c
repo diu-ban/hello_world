@@ -15,7 +15,7 @@ size_t print_dlistint(const dlistint_t *h)
 
 	if (h == NULL)
 		return (nodes);
-	while (ptr->next != NULL)
+	while (ptr != NULL)
 	{
 		printf("%d\n", ptr->n);
 		ptr = ptr->next;
