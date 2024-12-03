@@ -7,7 +7,7 @@
  * print_node - Prints a single node in the linked list.
  * @node: Pointer to the node to be printed.
  */
-void print_node(list_t *node)
+void print_node(const list_t *node)
 {
 	if (node->str == NULL)
 		printf("[0] (nil)\n");
