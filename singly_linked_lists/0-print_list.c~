@@ -1,0 +1,24 @@
+#include "list.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+void print_node(list_t *node)
+{
+        
+	if (node->str == NULL || node->str == "")
+		printf("[0] (nil)");
+	else
+		printf("[%d] (%s)\n", node->len, node->str);
+}
+
+size_t print_list(const list_t *h)
+{
+	list_t *ptr = h;
+
+	if (h == NULL)
+		return (0);
+	while (ptr != NULL)
+	{
+	
+	}
+}
